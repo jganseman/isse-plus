@@ -2,6 +2,12 @@
 Repository for tinkering with http://isse.sourceforge.net/
 For build instructions, see http://isse.sourceforge.net/wiki/index.php/Developer 
 
+Note: for some reason, manual addition of the submodules was still necessary:
+delete the juce and eigen subfolders in ./sdk, delete the ./extras folder too, and run:
+* ```git submodule add https://github.com/julianstorer/JUCE.git sdks/juce'''
+* ```git submodule add https://github.com/RLovelett/eigen.git sdks/eigen'''
+* ```git submodule add https://git.code.sf.net/p/isse/extra-code extras'''
+
 
 # Original ISSE README 
 
