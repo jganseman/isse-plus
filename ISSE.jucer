@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="XJHdcg" name="ISSE" projectType="guiapp" version="0.2.0"
+<JUCERPROJECT id="XJHdcg" name="ISSE" projectType="guiapp" version="0.2.2"
               bundleIdentifier="edu.stanford.ccrma" jucerVersion="4.3.1" defines=""
               includeBinaryInAppConfig="1">
   <MAINGROUP id="Rq24qA" name="ISSE">
