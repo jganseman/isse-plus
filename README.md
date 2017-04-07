@@ -1,6 +1,6 @@
 # isse-plus
 Repository for tinkering with http://isse.sourceforge.net/
-
+For build instructions, see http://isse.sourceforge.net/wiki/index.php/Developer 
 
 
 # Original ISSE README 
