@@ -28,16 +28,16 @@
 
 #include <unsupported/Eigen/FFT>
 
-class FFT
+class ISSFFT
 { 
 public:
     enum FFT_TYPE{ FORWARD, REVERSE };
 public:
     
     //! Constructor
-    FFT( size_t fftsize_, Matrix &fx, FFT_TYPE dir = FORWARD);
+    ISSFFT( size_t fftsize_, Matrix &fx, FFT_TYPE dir = FORWARD);
     //! Destrutor
-	~FFT();
+	~ISSFFT();
     
     //! Process method
 	void execute();

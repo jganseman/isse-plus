@@ -118,7 +118,7 @@ struct ISSStftParams
 };
 
 
-class FFT;
+class ISSFFT;
 
 class ISSStft
 {
@@ -154,8 +154,8 @@ private:
     ISSStftParams params;
     Matrix window;
     Matrix fftbuffer;
-    FFT * fft;
-    FFT * ifft;
+    ISSFFT * fft;
+    ISSFFT * ifft;
     
 };
 

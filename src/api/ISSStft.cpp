@@ -74,8 +74,8 @@ ISSStft::ISSStft(const ISSStftParams & stftParams_)
     
     fftbuffer.resize( fftsize + 2, 1);
     
-    ifft = new FFT( fftsize, fftbuffer, FFT::REVERSE);
-    fft  = new FFT( fftsize, fftbuffer, FFT::FORWARD);
+    ifft = new ISSFFT( fftsize, fftbuffer, ISSFFT::REVERSE);
+    fft  = new ISSFFT( fftsize, fftbuffer, ISSFFT::FORWARD);
     
     // check fftsize is power of two
     if(!isPowerOfTwo(fftsize))

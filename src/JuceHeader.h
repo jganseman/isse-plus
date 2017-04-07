@@ -21,5 +21,4 @@
 #include "../JuceLibraryCode/JuceHeader.h"
 
 
-
 #endif  // __JUCEHEADER_H_F684A078__

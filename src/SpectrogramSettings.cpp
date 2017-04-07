@@ -51,12 +51,12 @@
 //==============================================================================
 SpectrogramSettings::SpectrogramSettings (SpectrogramSettings::Listener * listener_, ProgramSettings & settings_)
     : listener(listener_),
-      clipSlider (0),
-      label (0),
-      colorMapComboBox (0),
-      label2 (0),
-      processComboBox (0),
-      label3 (0)
+      clipSlider (),
+      label (),
+      colorMapComboBox (),
+      label2 (),
+      processComboBox (),
+      label3 ()
 {
     addAndMakeVisible (clipSlider = new Slider ("clipSlider"));
     clipSlider->setRange (-120, -5, 1);

@@ -16,11 +16,9 @@
  */
 // Authors: Nicholas J. Bryan
 #include "ISSFft.h"
-
-
  
 //! Constructor
-FFT::FFT( size_t fftsize_, Matrix &fx, FFT_TYPE type_) : fftbuff(fx), fftsize(fftsize_), type(type_)
+ISSFFT::ISSFFT( size_t fftsize_, Matrix &fx, ISSFFT::FFT_TYPE type_) : fftbuff(fx), fftsize(fftsize_), type(type_)
 #ifdef __KISS_FFT__
 , freqvec(fftsize/2+1, 1)
 #endif
@@ -52,7 +50,7 @@ FFT::FFT( size_t fftsize_, Matrix &fx, FFT_TYPE type_) : fftbuff(fx), fftsize(ff
 }
 
     //! Destrutor
-FFT::~FFT()
+ISSFFT::~ISSFFT()
 {
 #ifdef __KISS_FFT__
 #else
@@ -67,7 +65,7 @@ FFT::~FFT()
     
     
     //! Process method
-void FFT::execute()
+void ISSFFT::execute()
 {
     
 #ifdef __KISS_FFT__

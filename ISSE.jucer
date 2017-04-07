@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <JUCERPROJECT id="XJHdcg" name="ISSE" projectType="guiapp" version="0.2.0"
-              bundleIdentifier="edu.stanford.ccrma" jucerVersion="3.1.0" defines=""
+              bundleIdentifier="edu.stanford.ccrma" jucerVersion="4.3.1" defines=""
               includeBinaryInAppConfig="1">
   <MAINGROUP id="Rq24qA" name="ISSE">
     <GROUP id="{ECFC0A27-437A-C3C4-008C-C8826F5E2DA5}" name="Source">
@@ -208,7 +208,6 @@
     <MODULE id="juce_data_structures" showAllCode="0" useLocalCopy="0"/>
     <MODULE id="juce_events" showAllCode="0" useLocalCopy="0"/>
     <MODULE id="juce_graphics" showAllCode="0" useLocalCopy="0"/>
-    <MODULE id="juce_gui_audio" showAllCode="0" useLocalCopy="0"/>
     <MODULE id="juce_gui_basics" showAllCode="0" useLocalCopy="0"/>
     <MODULE id="juce_gui_extra" showAllCode="0" useLocalCopy="0"/>
   </MODULES>
@@ -231,7 +230,6 @@
       <MODULEPATHS>
         <MODULEPATH id="juce_gui_extra" path="sdks/juce/modules"/>
         <MODULEPATH id="juce_gui_basics" path="sdks/juce/modules"/>
-        <MODULEPATH id="juce_gui_audio" path="sdks/juce/modules"/>
         <MODULEPATH id="juce_graphics" path="sdks/juce/modules"/>
         <MODULEPATH id="juce_events" path="sdks/juce/modules"/>
         <MODULEPATH id="juce_data_structures" path="sdks/juce/modules"/>
@@ -256,7 +254,6 @@
       <MODULEPATHS>
         <MODULEPATH id="juce_gui_extra" path="sdks/juce/modules"/>
         <MODULEPATH id="juce_gui_basics" path="sdks/juce/modules"/>
-        <MODULEPATH id="juce_gui_audio" path="sdks/juce/modules"/>
         <MODULEPATH id="juce_graphics" path="sdks/juce/modules"/>
         <MODULEPATH id="juce_events" path="sdks/juce/modules"/>
         <MODULEPATH id="juce_data_structures" path="sdks/juce/modules"/>
@@ -285,7 +282,6 @@
       <MODULEPATHS>
         <MODULEPATH id="juce_gui_extra" path="sdks/juce/modules"/>
         <MODULEPATH id="juce_gui_basics" path="sdks/juce/modules"/>
-        <MODULEPATH id="juce_gui_audio" path="sdks/juce/modules"/>
         <MODULEPATH id="juce_graphics" path="sdks/juce/modules"/>
         <MODULEPATH id="juce_events" path="sdks/juce/modules"/>
         <MODULEPATH id="juce_data_structures" path="sdks/juce/modules"/>
@@ -313,7 +309,6 @@
       <MODULEPATHS>
         <MODULEPATH id="juce_gui_extra" path="sdks/juce/modules"/>
         <MODULEPATH id="juce_gui_basics" path="sdks/juce/modules"/>
-        <MODULEPATH id="juce_gui_audio" path="sdks/juce/modules"/>
         <MODULEPATH id="juce_graphics" path="sdks/juce/modules"/>
         <MODULEPATH id="juce_events" path="sdks/juce/modules"/>
         <MODULEPATH id="juce_data_structures" path="sdks/juce/modules"/>
@@ -328,7 +323,8 @@
     <XCODE_IPHONE targetFolder="extras/builds/iOS" extraDefs="JUCE_PLUGINHOST_AU&#10;__SEPARATION_FLOAT_PRECISION__&#10;__IOS_CORE__&#10;__KISS_FFT__"
                   extraCompilerFlags="-fopenmp&#10;-I../../../SDKs/eigen/" extraLinkerFlags="-lpthread&#10;-headerpad_max_install_names&#10;/usr/local/lib/libfftw3f.a"
                   smallIcon="qYkELb" bigIcon="qYkELb" UIStatusBarHidden="1" UIFileSharingEnabled="1"
-                  customPList="&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;&#10;&lt;plist&gt;&#10;&lt;dict&gt;&#10;&lt;key&gt;CFBundleDocumentTypes&lt;/key&gt;&#10;&#9;&lt;array&gt;&#10;&#9;&#9;&lt;dict&gt;&#10;&#9;&#9;&#9;&lt;key&gt;CFBundleTypeExtensions&lt;/key&gt;&#10;&#9;&#9;&#9;&lt;array&gt;&#10;&#9;&#9;&#9;&#9;&lt;string&gt;isse&lt;/string&gt;&#10;&#9;&#9;&#9;&lt;/array&gt;&#10;&#9;&#9;&#9;&lt;key&gt;CFBundleTypeIconFile&lt;/key&gt;&#10;&#9;&#9;&#9;&lt;string&gt;FileIcon.icns&lt;/string&gt;&#10;&#9;&#9;&#9;&lt;key&gt;CFBundleTypeMIMETypes&lt;/key&gt;&#10;&#9;&#9;&#9;&lt;array&gt;&#10;&#9;&#9;&#9;&#9;&lt;string&gt;application/isse-project&lt;/string&gt;&#10;&#9;&#9;&#9;&lt;/array&gt;&#10;&#9;&#9;&#9;&lt;key&gt;CFBundleTypeName&lt;/key&gt;&#10;&#9;&#9;&#9;&lt;string&gt;ISSE Project&lt;/string&gt;&#10;&#9;&#9;&#9;&lt;key&gt;CFBundleTypeRole&lt;/key&gt;&#10;&#9;&#9;&#9;&lt;string&gt;Editor&lt;/string&gt;&#10;&#9;&#9;&#9;&lt;key&gt;LSIsAppleDefaultForType&lt;/key&gt;&#10;&#9;&#9;&#9;&lt;true/&gt;&#10;&#9;&#9;&lt;/dict&gt;&#10;&#9;&#9;&lt;dict&gt;&#10;&#9;&#9;&#9;&lt;key&gt;CFBundleTypeExtensions&lt;/key&gt;&#10;&#9;&#9;&#9;&lt;array&gt;&#10;&#9;&#9;&#9;&#9;&lt;string&gt;wav&lt;/string&gt;&#10;&#9;&#9;&#9;&#9;&lt;string&gt;wave&lt;/string&gt;&#10;&#9;&#9;&#9;&lt;/array&gt;&#10;&#9;&#9;&#9;&lt;key&gt;CFBundleTypeIconFile&lt;/key&gt;&#10;&#9;&#9;&#9;&lt;string&gt;FileIcon.icns&lt;/string&gt;&#10;&#9;&#9;&#9;&lt;key&gt;CFBundleTypeMIMETypes&lt;/key&gt;&#10;&#9;&#9;&#9;&lt;array&gt;&#10;&#9;&#9;&#9;&#9;&lt;string&gt;audio/wav&lt;/string&gt;&#10;&#9;&#9;&#9;&#9;&lt;string&gt;audio/x-wav&lt;/string&gt;&#10;&#9;&#9;&#9;&lt;/array&gt;&#10;&#9;&#9;&#9;&lt;key&gt;CFBundleTypeName&lt;/key&gt;&#10;&#9;&#9;&#9;&lt;string&gt;WAV Audio File&lt;/string&gt;&#10;&#9;&#9;&#9;&lt;key&gt;CFBundleTypeOSTypes&lt;/key&gt;&#10;&#9;&#9;&#9;&lt;array&gt;&#10;&#9;&#9;&#9;&#9;&lt;string&gt;WAV &lt;/string&gt;&#10;&#9;&#9;&#9;&#9;&lt;string&gt;wav &lt;/string&gt;&#10;&#9;&#9;&#9;&#9;&lt;string&gt;WAVE&lt;/string&gt;&#10;&#9;&#9;&#9;&#9;&lt;string&gt;wave&lt;/string&gt;&#10;&#9;&#9;&#9;&lt;/array&gt;&#10;&#9;&#9;&#9;&lt;key&gt;CFBundleTypeRole&lt;/key&gt;&#10;&#9;&#9;&#9;&lt;string&gt;Editor&lt;/string&gt;&#10;&#9;&#9;&lt;/dict&gt;&#10;&lt;/array&gt;&#10;&lt;/dict&gt;&#10;&lt;/plist&gt;">
+                  customPList="&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;&#10;&lt;plist&gt;&#10;&lt;dict&gt;&#10;&lt;key&gt;CFBundleDocumentTypes&lt;/key&gt;&#10;&#9;&lt;array&gt;&#10;&#9;&#9;&lt;dict&gt;&#10;&#9;&#9;&#9;&lt;key&gt;CFBundleTypeExtensions&lt;/key&gt;&#10;&#9;&#9;&#9;&lt;array&gt;&#10;&#9;&#9;&#9;&#9;&lt;string&gt;isse&lt;/string&gt;&#10;&#9;&#9;&#9;&lt;/array&gt;&#10;&#9;&#9;&#9;&lt;key&gt;CFBundleTypeIconFile&lt;/key&gt;&#10;&#9;&#9;&#9;&lt;string&gt;FileIcon.icns&lt;/string&gt;&#10;&#9;&#9;&#9;&lt;key&gt;CFBundleTypeMIMETypes&lt;/key&gt;&#10;&#9;&#9;&#9;&lt;array&gt;&#10;&#9;&#9;&#9;&#9;&lt;string&gt;application/isse-project&lt;/string&gt;&#10;&#9;&#9;&#9;&lt;/array&gt;&#10;&#9;&#9;&#9;&lt;key&gt;CFBundleTypeName&lt;/key&gt;&#10;&#9;&#9;&#9;&lt;string&gt;ISSE Project&lt;/string&gt;&#10;&#9;&#9;&#9;&lt;key&gt;CFBundleTypeRole&lt;/key&gt;&#10;&#9;&#9;&#9;&lt;string&gt;Editor&lt;/string&gt;&#10;&#9;&#9;&#9;&lt;key&gt;LSIsAppleDefaultForType&lt;/key&gt;&#10;&#9;&#9;&#9;&lt;true/&gt;&#10;&#9;&#9;&lt;/dict&gt;&#10;&#9;&#9;&lt;dict&gt;&#10;&#9;&#9;&#9;&lt;key&gt;CFBundleTypeExtensions&lt;/key&gt;&#10;&#9;&#9;&#9;&lt;array&gt;&#10;&#9;&#9;&#9;&#9;&lt;string&gt;wav&lt;/string&gt;&#10;&#9;&#9;&#9;&#9;&lt;string&gt;wave&lt;/string&gt;&#10;&#9;&#9;&#9;&lt;/array&gt;&#10;&#9;&#9;&#9;&lt;key&gt;CFBundleTypeIconFile&lt;/key&gt;&#10;&#9;&#9;&#9;&lt;string&gt;FileIcon.icns&lt;/string&gt;&#10;&#9;&#9;&#9;&lt;key&gt;CFBundleTypeMIMETypes&lt;/key&gt;&#10;&#9;&#9;&#9;&lt;array&gt;&#10;&#9;&#9;&#9;&#9;&lt;string&gt;audio/wav&lt;/string&gt;&#10;&#9;&#9;&#9;&#9;&lt;string&gt;audio/x-wav&lt;/string&gt;&#10;&#9;&#9;&#9;&lt;/array&gt;&#10;&#9;&#9;&#9;&lt;key&gt;CFBundleTypeName&lt;/key&gt;&#10;&#9;&#9;&#9;&lt;string&gt;WAV Audio File&lt;/string&gt;&#10;&#9;&#9;&#9;&lt;key&gt;CFBundleTypeOSTypes&lt;/key&gt;&#10;&#9;&#9;&#9;&lt;array&gt;&#10;&#9;&#9;&#9;&#9;&lt;string&gt;WAV &lt;/string&gt;&#10;&#9;&#9;&#9;&#9;&lt;string&gt;wav &lt;/string&gt;&#10;&#9;&#9;&#9;&#9;&lt;string&gt;WAVE&lt;/string&gt;&#10;&#9;&#9;&#9;&#9;&lt;string&gt;wave&lt;/string&gt;&#10;&#9;&#9;&#9;&lt;/array&gt;&#10;&#9;&#9;&#9;&lt;key&gt;CFBundleTypeRole&lt;/key&gt;&#10;&#9;&#9;&#9;&lt;string&gt;Editor&lt;/string&gt;&#10;&#9;&#9;&lt;/dict&gt;&#10;&lt;/array&gt;&#10;&lt;/dict&gt;&#10;&lt;/plist&gt;"
+                  iosScreenOrientation="portraitlandscape">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" iosCompatibility="default" isDebug="1" optimisation="1"
                        targetName="ISSE" cppLibType="libc++"/>
@@ -338,7 +334,6 @@
       <MODULEPATHS>
         <MODULEPATH id="juce_gui_extra" path="sdks/juce/modules"/>
         <MODULEPATH id="juce_gui_basics" path="sdks/juce/modules"/>
-        <MODULEPATH id="juce_gui_audio" path="sdks/juce/modules"/>
         <MODULEPATH id="juce_graphics" path="sdks/juce/modules"/>
         <MODULEPATH id="juce_events" path="sdks/juce/modules"/>
         <MODULEPATH id="juce_data_structures" path="sdks/juce/modules"/>
@@ -352,4 +347,7 @@
     </XCODE_IPHONE>
   </EXPORTFORMATS>
   <JUCEOPTIONS/>
+  <LIVE_SETTINGS>
+    <OSX/>
+  </LIVE_SETTINGS>
 </JUCERPROJECT>

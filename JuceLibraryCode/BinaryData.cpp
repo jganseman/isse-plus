@@ -2413,8 +2413,6 @@ const char* getNamedResource (const char* resourceNameUTF8, int& numBytes) throw
     return 0;
 }
 
-const int namedResourceListSize = 4;
-
 const char* namedResourceList[] =
 {
     "FileIcon_icns",
