@@ -6,13 +6,17 @@ For original build instructions, see http://isse.sourceforge.net/wiki/index.php/
 
 The code was initially ported from http://isse.sourceforge.net/. At that time,
 manual addition of the submodules was necessary:
+```
 	git submodule add https://github.com/julianstorer/JUCE.git sdks/juce
 	git submodule add https://github.com/RLovelett/eigen.git sdks/eigen
 	git submodule add https://git.code.sf.net/p/isse/extra-code extras
+```
 
 When building from this repository on Github, just running
+```
 	git submodule init
 	git submodule update
+```
 should work.
 
 The JUCE library on which it depends is in the meantime upgraded from 
@@ -24,14 +28,15 @@ generate a new XCodeProject file from, which will automatically overwrite
 the one imported from the isse/extras submodule.
 
 These are corrected build instructions for FFTW on OSX:
-    ./configure CFLAGS="-arch 386" 
+```
+    ./configure CFLAGS="-arch 386"
     make 
     ./configure --enable-float CFLAGS="-arch 386" 
     make 
     mkdir .libs/32 
     mv .libs/libfftw3.a .libs/32/ 
     mv .libs/libfftw3f.a .libs/32/ 
-    ./configure CFLAGS="arch x86_64" 
+    ./configure CFLAGS="-arch x86_64" 
     make 
     ./configure --enable-float CFLAGS="-arch x86_64" 
     make 
@@ -41,10 +46,12 @@ These are corrected build instructions for FFTW on OSX:
     lipo -create .libs/32/libfftw3.a .libs/64/libfftw3.a -output ./libs/libfftw3.a 
     lipo -create .libs/32/libfftw3f.a .libs/64/libfftw3f.a -output ./libs/libfftw3f.a 
     sudo make install
-or if you want to install manually:   
+```
+or if you want to install manually:
+```
     sudo cp ./libs/libfftw3.a /usr/local/lib/libfftw3.a 
     sudo cp ./libs/libfftw3f.a /usr/local/lib/libfftw3f.a 
-
+```
 
 
 ## Original ISSE README 
