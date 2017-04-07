@@ -27,3 +27,11 @@
 *.exe
 *.out
 *.app
+
+# From the original ISSE project:
+.DS_Store
+*.wav
+*.isse
+*.mp3
+*.aac
+
