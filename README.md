@@ -12,22 +12,16 @@ manual addition of the submodules was necessary:
 	git submodule add https://git.code.sf.net/p/isse/extra-code extras
 ```
 
-When building from this repository on Github, just running
+When building from this repository on Github, first running
 ```
 	git submodule init
 	git submodule update
 ```
 should work.
 
-The JUCE library on which it depends is in the meantime upgraded from 
-version 3.1.0 to version 4.3.0. This introduced some errors and namespace 
-clashes in the original code. To the best of my ability, these have been
-fixed in this repository for MacOSX (no guarantees given for other platforms).
-There is now a new Jucer file in the main directory which should be used to
-generate a new XCodeProject file from, which will automatically overwrite 
-the one imported from the isse/extras submodule.
-
-These are corrected build instructions for FFTW on OSX:
+The project depends on FFTW, and builds by default as a "fat binary" for
+i386 and x86_64. FFTW therefore needs to be built as fat binary on your 
+system as well. These are corrected manual build instructions for FFTW on OSX:
 ```
     ./configure CFLAGS="-arch 386"
     make 
@@ -47,11 +41,20 @@ These are corrected build instructions for FFTW on OSX:
     lipo -create .libs/32/libfftw3f.a .libs/64/libfftw3f.a -output ./libs/libfftw3f.a 
     sudo make install
 ```
-or if you want to install manually:
+or to install manually, instead of that last line:
 ```
     sudo cp ./libs/libfftw3.a /usr/local/lib/libfftw3.a 
     sudo cp ./libs/libfftw3f.a /usr/local/lib/libfftw3f.a 
 ```
+
+Then, to build the project, 
+- build and run `sdks/juce/extras/Projucer/Builds/MacOSK/Projucer.xcodeproj`
+- open `ISSE.jucer` in Projucer
+- click `Save project and open in IDE`, and select MacOSX
+- in the opened ISSE Xcode project, doublecheck that the deployment target matches your system
+
+Known issues:
+- script src/post-build-osx.sh does not run (and package the app) yet.
 
 
 ## Original ISSE README 
