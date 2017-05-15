@@ -2,6 +2,18 @@
 Repository for tinkering with http://isse.sourceforge.net/ .
 For original build instructions, see http://isse.sourceforge.net/wiki/index.php/Developer .
 
+## TL;DR build instructions
+```
+	git submodule init
+	git submodule update
+```
+Then, for OSX:
+- Open `sdks/juce/extras/Projucer/Builds/MacOSK/Projucer.xcodeproj`, build and run Projucer
+- open `ISSE.jucer` in Projucer
+- click `Save project and open in IDE`, and select MacOSX
+- in the opened ISSE Xcode project, first set the deployment target to match your system
+- The packaging script fails but the build itself is in extras/builds/MacOSX/build/Debug 
+
 ## Changes and updates
 
 The code was initially ported from http://isse.sourceforge.net/. At that time,
@@ -12,7 +24,7 @@ manual addition of the submodules was necessary:
 	git submodule add https://git.code.sf.net/p/isse/extra-code extras
 ```
 
-When building from this repository on Github, first running
+Now, when building from this repository on Github, first running
 ```
 	git submodule init
 	git submodule update
@@ -47,14 +59,14 @@ or to install manually, instead of that last line:
     sudo cp ./libs/libfftw3f.a /usr/local/lib/libfftw3f.a 
 ```
 
-Then, to build the project, 
+Then, to build ISSE, on OSX:
 - build and run `sdks/juce/extras/Projucer/Builds/MacOSK/Projucer.xcodeproj`
 - open `ISSE.jucer` in Projucer
 - click `Save project and open in IDE`, and select MacOSX
-- in the opened ISSE Xcode project, doublecheck that the deployment target matches your system
+- in the opened ISSE Xcode project, first set the deployment target to match your system
 
 Known issues:
-- script src/post-build-osx.sh does not run (and package the app) yet.
+- script src/post-build-osx.sh does not run (and package the app) yet. Builds appear in extras/builds/MacOSX/build/Debug
 
 
 ## Original ISSE README 
