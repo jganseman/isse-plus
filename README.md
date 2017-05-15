@@ -11,8 +11,8 @@ Then, for OSX:
 - Open `sdks/juce/extras/Projucer/Builds/MacOSK/Projucer.xcodeproj`, build and run Projucer
 - open `ISSE.jucer` in Projucer
 - click `Save project and open in IDE`, and select MacOSX
-- in the opened ISSE Xcode project, first set the deployment target to match your system
-- The packaging script fails but the build itself is in extras/builds/MacOSX/build/Debug 
+- in the opened ISSE Xcode project, first set the `deployment target` to match your system
+- The packaging script fails but the build itself is in `extras/builds/MacOSX/build/Debug` 
 
 ## Changes and updates
 
@@ -66,7 +66,7 @@ Then, to build ISSE, on OSX:
 - in the opened ISSE Xcode project, first set the deployment target to match your system
 
 Known issues:
-- script src/post-build-osx.sh does not run (and package the app) yet. Builds appear in extras/builds/MacOSX/build/Debug
+- script src/post-build-osx.sh does not run (and package the app) yet. Builds appear in `extras/builds/MacOSX/build/Debug`
 
 
 ## Original ISSE README 
