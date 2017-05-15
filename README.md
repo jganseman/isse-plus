@@ -35,7 +35,7 @@ Most of the changes done to the ISSE core pertain to an update of JUCE.
 This includes mostly: 
 - renaming a few classes to resolve namespace clashes with new JUCE functionality
 - updating function calls after function signature updates: removing deprecated / adding new parameters etc.
-See commit f7c26bd1ac1a4a8960c520e1ce342caa5dda2a1a for most of the changes.
+See commit `f7c26bd1ac1a4a8960c520e1ce342caa5dda2a1a` for most of the changes.
 
 The project depends on FFTW, and builds by default as a "fat binary" for
 i386 and x86_64. FFTW therefore needs to be built as fat binary on your 
