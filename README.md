@@ -12,29 +12,9 @@ Then, for OSX:
 - open `ISSE.jucer` in Projucer
 - click `Save project and open in IDE`, and select MacOSX
 - in the opened ISSE Xcode project, first set the `deployment target` to match your system
-- The packaging script fails (see issue #1) but the build itself is in `extras/builds/MacOSX/build/Debug` 
+- The packaging script fails (see issue #1) but the build itself is in `extras/builds/MacOSX/build/Debug`
 
-## Changes and updates
-
-The code was initially ported from http://isse.sourceforge.net/. At that time,
-manual addition of the submodules was necessary:
-```
-	git submodule add https://github.com/julianstorer/JUCE.git sdks/juce
-	git submodule add https://github.com/RLovelett/eigen.git sdks/eigen
-	git submodule add https://git.code.sf.net/p/isse/extra-code extras
-```
-
-Now, when building from this repository on Github, first running
-```
-	git submodule init
-	git submodule update
-```
-should work.
-
-Most of the changes done to the ISSE core pertain to an update of JUCE. See commit `f7c26bd1ac1a4a8960c520e1ce342caa5dda2a1a` for details. This includes mostly: 
-- renaming a few classes to resolve namespace clashes with new JUCE functionality (e.g. regarding FFT)
-- updating function calls after function signature updates: removing deprecated / adding new parameters etc.
-- an update to the generated JUCE config files, related to a newer version of Projucer.
+## About FFTW
 
 The project depends on FFTW, and builds by default as a "fat binary" for
 i386 and x86_64. FFTW therefore needs to be built as fat binary on your 
@@ -64,15 +44,29 @@ or to install manually, instead of that last line:
     sudo cp ./libs/libfftw3f.a /usr/local/lib/libfftw3f.a 
 ```
 
-Then, to build ISSE, on OSX:
-- build and run `sdks/juce/extras/Projucer/Builds/MacOSK/Projucer.xcodeproj`
-- open `ISSE.jucer` in Projucer
-- click `Save project and open in IDE`, and select MacOSX
-- in the opened ISSE Xcode project, first set the deployment target to match your system
+## Changes and updates
+
+Most of the changes done to the ISSE core pertain to an update of JUCE. See commit `f7c26bd1ac1a4a8960c520e1ce342caa5dda2a1a` for details. This includes mostly: 
+- renaming a few classes to resolve namespace clashes with new JUCE functionality (e.g. regarding FFT)
+- updating function calls after function signature changes: removing deprecated / adding new parameters etc.
+- an update to the generated JUCE config files, related to a newer version of Projucer.
+
+The code was initially ported from http://isse.sourceforge.net/. At that time,
+manual addition of the submodules was necessary:
+```
+	git submodule add https://github.com/julianstorer/JUCE.git sdks/juce
+	git submodule add https://github.com/RLovelett/eigen.git sdks/eigen
+	git submodule add https://git.code.sf.net/p/isse/extra-code extras
+```
+Now, when building from this repository on Github, first running
+```
+	git submodule init
+	git submodule update
+```
+should work.
 
 Known issues:
 - script src/post-build-osx.sh does not run (and package the app) yet. Builds appear in `extras/builds/MacOSX/build/Debug`
-
 
 ## Original ISSE README 
 
